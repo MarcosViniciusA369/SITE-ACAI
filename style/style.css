@@ -1,0 +1,44 @@
+@font-face{
+    font-family: "lesthary";
+    src: url(../fontes/lesthary/lesthary.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --font-titulo: "lesthary";
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgba(252, 237, 215, 0.747);
+}
+header {
+    background-image: linear-gradient(to bottom, rgb(105, 5, 163), rgb(158, 39, 238) );
+    min-width: 150px;
+    text-align: center;
+    padding: 10px;
+}
+
+header > h1{
+    color: white;
+    font-size: 3em;
+    margin-top: 25px;
+    margin-bottom: 42px;
+    font-family: var(--font-titulo);
+    text-shadow: 4px 2px 7px rgba(0, 0, 0, 0.74);
+}
+
+nav{
+    background-image: linear-gradient(to bottom, rgba(230, 230, 24, 0.808), rgba(247, 247, 148, 0.87));
+    padding: 4px;
+}
+
+nav > a{
+    color: rgb(71, 0, 85);
+    margin-left: 2px;
+    text-decoration: none;
+}
