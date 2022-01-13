@@ -17,7 +17,7 @@ body{
     background-color: rgba(252, 237, 215, 0.747);
 }
 header {
-    background-image: linear-gradient(to bottom, rgb(105, 5, 163), rgb(158, 39, 238) );
+    background-position: center center;
     min-width: 150px;
     text-align: center;
     padding: 10px;
@@ -30,15 +30,97 @@ header > h1{
     margin-bottom: 42px;
     font-family: var(--font-titulo);
     text-shadow: 4px 2px 7px rgba(0, 0, 0, 0.74);
+    background-color: transparent;
+}
+
+.acai-fundo{
+    background-image: url('../imagens/acai-borda.jpg');
+    background-color: rgb(131, 7, 148);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: -14px;
+    padding: 50px;
+
 }
 
 nav{
-    background-image: linear-gradient(to bottom, rgba(230, 230, 24, 0.808), rgba(247, 247, 148, 0.87));
-    padding: 4px;
+    background-image: linear-gradient(to bottom, rgba(247, 247, 174, 0.808), rgba(255, 255, 0, 0.87));
+    padding: 6px;
+    margin-top: 3px;
 }
 
 nav > a{
-    color: rgb(71, 0, 85);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
     margin-left: 2px;
+    padding-bottom: 10px;
     text-decoration: none;
+    text-shadow: 1px 0px 4px rgba(0, 0, 0, 0.637);
+
+}
+
+div{
+    margin: 10px 10px 0px 10px;
+    padding: auto;
+    border-radius: 10px;
+    
+}
+.expo{
+    display: flex;
+    background-color: white;
+}
+
+div > img {
+    display: inline-block;
+    width: 35vh;
+    box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.055);
+    overflow: hidden;
+}
+div > img:hover{
+    width: 40vh;
+    transition: all 0.8s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.349);
+    border-radius: 10px;
+}
+
+
+div > p{
+    height: 24px;
+    max-width: 600px;
+    margin: 10px 10px 10px 20px;
+    font-size: 1.5em;
+    font-family: cursive;
+
+}
+
+div > p#ml{
+    color: black;
+}
+
+div > p#preco{
+    color: rgb(183, 28, 255);
+    transform: translate(-118%, 120%);
+
+}
+
+button{
+    height:20px; 
+    width:200px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    background-color: rgb(116, 243, 116);
+    color: white;
+    border: none;
+    box-shadow: 2px 1px 2px rgb(0 0 0 / 18%);
+    text-align: center;
+    text-shadow: 2px 1px 2px rgb(0 0 0 / 18%);
+    
+}
+
+button:hover{
+    background-color: green;
 }
